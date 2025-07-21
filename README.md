@@ -5,10 +5,10 @@ Incluye 4 luces (roja, amarilla, verde y púrpura 💜) y un diseño moderno, re
 ¡Haz clic en cada luz para activarla o apágalas todas!
 
 ---
+## 🌈 Vista Previa
 
-## 🖼️ Vista Previa
+![Vista previa](https://github.com/PatsyThePug/traffic-light/raw/main/src/assets/previavista.png)
 
-![Vista previa del semáforo](./src/assets/previavista.png)
 
 ---
 

@@ -44,7 +44,7 @@ Incluye 4 luces (roja, amarilla, verde y púrpura 💜) y un diseño moderno, re
 
 ## 🖌 Créditos
 
-> 🎨 Diseño visual: **Alejandra Bárcena**  
+> 🎨 Diseño visual: Alejandra Bárcena**  
 
 ## 🚀 Proyecto en Línea
 

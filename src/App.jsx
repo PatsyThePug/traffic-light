@@ -1,44 +1,58 @@
-import { useState } from 'react';
-import './App.css';
 
-function App() {
-  const [activeLight, setActiveLight] = useState(null);
+import { useState } from "react";
+import "./App.css";
+
+function TrafficLight() {
+  const [color, setColor] = useState("red");
+  const [colors, setColors] = useState(["red", "yellow", "green"]);
+
+  const handleColorClick = (selectedColor) => {
+    setColor(selectedColor);
+  };
+
+  const alternateColor = () => {
+    const currentIndex = colors.indexOf(color);
+    const nextIndex = (currentIndex + 1) % colors.length;
+    setColor(colors[nextIndex]);
+  };
+
+  const addPurpleLight = () => {
+    if (!colors.includes("purple")) {
+      setColors([...colors, "purple"]);
+    }
+  };
 
   return (
-    <div id="root">
-      <div className="traffic-light">
-        <h1>Simulador de Semáforo 🚦</h1>
+    <div className="traffic-light">
+      <h1>🚦 Semáforo React</h1>
+      
+      <div className="traffic-light-container">
+        {colors.map((lightColor) => (
+          <div
+            key={lightColor}
+            className={`light ${lightColor} ${color === lightColor ? "active" : ""}`}
+            onClick={() => handleColorClick(lightColor)}
+          ></div>
+        ))}
+      </div>
 
-        <div className="traffic-light-container">
-          <div
-            className={`light red ${activeLight === 'red' ? 'active' : ''}`}
-            onClick={() => setActiveLight('red')}
-          ></div>
-          <div
-            className={`light yellow ${activeLight === 'yellow' ? 'active' : ''}`}
-            onClick={() => setActiveLight('yellow')}
-          ></div>
-          <div
-            className={`light green ${activeLight === 'green' ? 'active' : ''}`}
-            onClick={() => setActiveLight('green')}
-          ></div>
-          <div
-            className={`light purple ${activeLight === 'purple' ? 'active' : ''}`}
-            onClick={() => setActiveLight('purple')}
-          ></div>
-        </div>
-
-        <div className="controls">
-          <button className="alternate-btn" onClick={() => setActiveLight(null)}>
-            Apagar
-          </button>
-          <button className="purple-btn" onClick={() => setActiveLight('purple')}>
-            Púrpura 💜
-          </button>
-        </div>
+      <div className="controls">
+        <button 
+          className="alternate-btn"
+          onClick={alternateColor}
+        >
+          Alternar Colores
+        </button>
+        
+        <button 
+          className="purple-btn"
+          onClick={addPurpleLight}
+        >
+          Añadir Púrpura
+        </button>
       </div>
     </div>
   );
 }
 
-export default App;
+export default TrafficLight;

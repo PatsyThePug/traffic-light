@@ -4,18 +4,10 @@ Este proyecto es un simulador interactivo de semáforo desarrollado con **React 
 Incluye 4 luces (roja, amarilla, verde y púrpura 💜) y un diseño moderno, responsivo y atractivo.  
 ¡Haz clic en cada luz para activarla o apágalas todas!
 
----
-## 🌈 Vista Previa
-
-![Vista previa](https://github.com/PatsyThePug/traffic-light/raw/main/src/assets/previavista.png)
-
-
----
-
 ## 🧠 Tecnologías Utilizadas
 
 - ⚛️ React 18
-- 🎨 CSS puro con gradientes y animaciones
+- 🎨 CSS con gradientes y animaciones
 - ⚡ Vite para entorno de desarrollo rápido
 - 💡 React Hooks (`useState`)
 

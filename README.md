@@ -23,17 +23,21 @@ Incluye 4 luces (roja, amarilla, verde y púrpura 💜) y un diseño moderno, re
 
 ---
 
+📁 Estructura de Archivos
+
 📦 traffic-light
-├── 📂 public
-│   
-├── 📂 src
-│   ├── 🧠 App.jsx
-│   ├── 🎨 App.css
-│   ├── 🔌 main.jsx
-│   └── 💅 index.css
-├── 📄 package.json
-├── 📄 README.md
-└── ⚙️ vite.config.js
+📂 public
+📂 src
+🧠 App.jsx
+🎨 App.css
+🔌 main.jsx
+💅 index.css
+📄 package.json
+📄 README.md
+⚙️ vite.config.js
+
+
+
 
 
 ---

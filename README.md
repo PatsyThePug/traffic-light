@@ -49,4 +49,4 @@ Incluye 4 luces (roja, amarilla, verde y púrpura 💜) y un diseño moderno, re
 ## 🚀 Proyecto en Línea
 
 Puedes ver el semáforo funcionando aquí:  
-🔗 [Semáforo React en Vercel](https://traffic-light-ivory-five.vercel.app/)
+🔗 [Semáforo React en Vercel](https://vercel.com/patsy-the-pug-dev-s-projects/traffic-light)
